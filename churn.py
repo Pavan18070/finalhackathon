@@ -57,7 +57,7 @@ def predict_churn(tenure,PhoneService,Contract,PaperlessBilling,PaymentMethod,Mo
     return prediction
 
 def main():
-    st.title("App to predict churn")
+    st.title("App to predict churn of a Telephone Company")
     html_temp = """
     <div style="background-color: orange;padding:10px">
     <h2 style="color:white;text-align:center;"> Please enter the values.</h2>
