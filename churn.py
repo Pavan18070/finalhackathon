@@ -9,6 +9,7 @@ import pickle
 import pandas as pd
 #from flasgger import Swagger
 import streamlit as st 
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from PIL import Image
 
@@ -58,7 +59,7 @@ def predict_churn(tenure,PhoneService,Contract,PaperlessBilling,PaymentMethod,Mo
 def main():
     st.title("App to predict churn")
     html_temp = """
-    <div style="background-color: #89CFF0;padding:10px">
+    <div style="background-color: orange;padding:10px">
     <h2 style="color:white;text-align:center;"> Please enter the values.</h2>
     </div>
     """
